@@ -49,6 +49,7 @@ public class board extends javax.swing.JFrame {
         undo = new javax.swing.JButton();
         reset = new javax.swing.JButton();
         back = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("2048");
@@ -167,22 +168,23 @@ public class board extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Cambria Math", 0, 12)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("2048");
-        jLabel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "High Score", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Cambria Math", 0, 14))); // NOI18N
+        jLabel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "High Score", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Cambria Math", 1, 14))); // NOI18N
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(290, 50, 90, 41);
+        jLabel2.setBounds(270, 60, 100, 40);
 
         jLabel1.setBackground(new java.awt.Color(153, 153, 153));
         jLabel1.setFont(new java.awt.Font("Cambria Math", 0, 12)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("4");
-        jLabel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Score", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Cambria Math", 0, 14))); // NOI18N
+        jLabel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Score", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Cambria Math", 1, 14))); // NOI18N
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(190, 50, 90, 39);
+        jLabel1.setBounds(170, 60, 90, 40);
 
-        undo.setBackground(new java.awt.Color(204, 204, 204));
+        undo.setBackground(new java.awt.Color(255, 255, 255));
         undo.setFont(new java.awt.Font("Cambria Math", 0, 11)); // NOI18N
-        undo.setText("Undo");
+        undo.setForeground(new java.awt.Color(255, 255, 255));
+        undo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/icons8-undo-24.png"))); // NOI18N
         undo.setBorderPainted(false);
         undo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,11 +192,12 @@ public class board extends javax.swing.JFrame {
             }
         });
         getContentPane().add(undo);
-        undo.setBounds(210, 100, 57, 23);
+        undo.setBounds(210, 120, 30, 30);
 
-        reset.setBackground(new java.awt.Color(204, 204, 204));
+        reset.setBackground(new java.awt.Color(255, 255, 255));
         reset.setFont(new java.awt.Font("Cambria Math", 0, 11)); // NOI18N
-        reset.setText("Reset");
+        reset.setForeground(new java.awt.Color(255, 255, 255));
+        reset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/icons8-available-updates-24.png"))); // NOI18N
         reset.setBorderPainted(false);
         reset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,7 +205,7 @@ public class board extends javax.swing.JFrame {
             }
         });
         getContentPane().add(reset);
-        reset.setBounds(300, 100, 59, 23);
+        reset.setBounds(280, 120, 30, 30);
 
         back.setBackground(new java.awt.Color(204, 204, 204));
         back.setFont(new java.awt.Font("Cambria Math", 0, 11)); // NOI18N
@@ -215,6 +218,10 @@ public class board extends javax.swing.JFrame {
         });
         getContentPane().add(back);
         back.setBounds(170, 440, 60, 23);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Fractal Wallpapers-part-1 (311).jpg"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 380, 510);
 
         getAccessibleContext().setAccessibleDescription("");
         getAccessibleContext().setAccessibleParent(this);
@@ -289,6 +296,7 @@ public class board extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;

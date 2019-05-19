@@ -27,12 +27,14 @@ public class MainMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel4 = new javax.swing.JLabel();
         play = new javax.swing.JButton();
         scores = new javax.swing.JButton();
         exit = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("                                                     2048");
@@ -94,8 +96,12 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel2.setOpaque(true);
         getContentPane().add(jLabel2);
         jLabel2.setBounds(50, 80, 289, 56);
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 400, 500);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/Fractal Wallpapers-part-1 (313).jpg"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 400, 500);
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 400, 500);
 
         getAccessibleContext().setAccessibleName("                                            2048");
 
@@ -161,7 +167,9 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JButton exit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JButton play;
     private javax.swing.JButton scores;
     // End of variables declaration//GEN-END:variables
